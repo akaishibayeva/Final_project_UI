@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Result</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='normalize.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style-quiz.css') }}">
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<h2 class="result__title">Congratulations!</h2>
+		
+		<h2 class="result__score">
+			Your score is: 
+			<span class="quiz-result"></span>/10
+		</h2>
+
+		<div class="result-nav">
+			
+			<a href="/" class="result-link">Home</a>
+			<a href="/quiz" class="result-link">Take Quiz again</a>
+
+		</div>
+
+		<div class="results">
+
+			
+
+		</div>
+
+	</div>
+
+
+	<script type="text/javascript" src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

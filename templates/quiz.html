@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='normalize.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style-quiz.css') }}">
+</head>
+<body>
+
+	<div class="wrapper">
+		
+		<div class="quiz-status">
+			<p class="quiz-status__title">Quiz</p>
+			<p class="quiz-status__text">
+				<span class="quiz-status__number"></span>/10
+			</p>
+		</div>
+
+		<form class="quiz-form">
+
+			<div class="question q1">
+				
+			</div>
+
+			<div class="question q2">
+				
+			</div>
+
+			<div class="question q3">
+				
+			</div>
+
+			<div class="question q4">
+				
+			</div>
+
+			<div class="question q5">
+				
+			</div>
+
+			<div class="question q6">
+				
+			</div>
+
+			<div class="question q7">
+				
+			</div>
+
+			<div class="question q8">
+				
+			</div>
+
+			<div class="question q9">
+				
+			</div>
+
+			<div class="question q10">
+				
+			</div>
+
+			<div class="quiz-form__button-wrapper">
+				<button type="submit" class="quiz-form__button">Submit</button>
+			</div>
+			
+		</form>
+
+		<div class="quiz-control">
+			<button class="quiz-control__button quiz-control__back">Back</button>
+			<button class="quiz-control__button quiz-control__next">Next</button>
+		</div>
+
+	</div>
+
+
+	<script type="text/javascript" src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

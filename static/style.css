@@ -1,0 +1,715 @@
+/* Default styles */
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+body {
+	font-family: 'Roboto Slab', serif;
+	padding: 0;
+	margin: 0;
+}
+
+.h {
+	margin-top: 0;
+}
+
+/* QUIZ style start */
+
+.wrapper {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.quiz-status {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid black;
+}
+
+.quiz-status__title {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.quiz-status__title {
+	margin-bottom: 20px;
+}
+
+.quiz-form {
+	margin-bottom: 30px;
+}
+
+.question-title {
+	margin-bottom: 20px;
+}
+
+.question-input-wrapper {
+	margin-bottom: 10px;
+}
+
+.question-option {
+	margin-right: 2px;
+}
+
+.quiz-control {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	padding-top: 20px;
+}
+
+.quiz-control__button {
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px 10px;
+	min-width: 30px;
+	background: black;
+	color: white;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+.quiz-control__button:hover {
+	background: white;
+	color: black;
+	border: 1px solid black;
+}
+
+.q2, .q3, .q4, .q5, .q6, .q7, .q8, .q9, .q10 {
+	display: none;
+}
+
+.quiz-control__back {
+	display: none;
+}
+
+.quiz-form__button-wrapper {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.quiz-form__button-wrapper {
+	display: none;
+}
+
+.quiz-form__button {
+	background: blue;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.question-error {
+	color: red;
+}
+
+.question-fail {
+	background: red;
+	color: white;
+}
+
+.question-correct {
+	background: green;
+	color: white;
+}
+
+/* QUIZ style end */
+
+/* MAIN style begin */
+
+.main-page {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/stocks-bg.jpeg');
+  -webkit-background-size: cover;
+  -moz-background-size:  cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+}
+
+.wrapper-main {
+	max-width: 600px;
+	margin: auto;
+	color: #fff;
+}
+
+.goal {
+	text-align: center;
+	line-height: 1.8;
+	font-weight: normal;
+	font-size: 30px;
+}
+
+.main-title {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+
+.steps {
+	text-align: center;
+}
+
+.learn-btn {
+	margin-top: 50px;
+	text-align:center;
+	margin-bottom: 40px;
+}
+
+.main-button {
+	color:#000;
+	font-size: 30px;
+	width: 300px;
+	padding: 15px 0;
+	border-radius: 15px;
+	box-shadow: 2px, 2px, 3px, 1px;
+	cursor: pointer;
+	background: lightgray;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.quiz-btn {
+	margin-top: 50px;
+	text-align:center;
+	margin-bottom: 40px;
+}
+
+.quiz-button {
+	color:grey;
+	font-size: 25px;
+	width: 200px;
+	padding: 10px 10px;
+	border-radius: 15px;
+	box-shadow: 2px, 2px, 3px, 1px;
+	display: inline-block;
+	background: lightgray;
+	text-decoration: none;
+}
+
+/* MAIN style end */
+
+/* Stocks vs Bonds style begin */
+
+.wrapper-pages {
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+
+.content-wrapper {
+	 max-width: 850px; 
+	 margin: 0 auto; 
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+.asset-stocks {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 400px;
+}
+
+.stock-class {
+	padding-left: 70px;
+}
+
+.asset-bonds {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.bond-class {
+	
+}
+
+.asset-class {
+	color:#4FA91B;
+	font-size: 30px;
+	margin-top: 0;
+}
+
+.nav-menu {
+	display: inline-block;
+	vertical-align: top;
+	background: #EDEDED;
+	padding-top: 20px;
+	margin-top: 0;
+}
+
+.side-menu {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 40px;
+	margin-bottom: 30px;
+}
+
+.nav-menu {
+	list-style: circle;
+	font-size: 25px;
+	line-height: 40px;
+	padding-right: 30px;
+	list-style: none;
+}
+
+.menu-side a{
+	text-decoration: none;
+	color: #000;
+	font-size: 25px;
+}
+
+.menu-side a:hover {
+	color: #787878;
+}
+
+.menu-side--active a {
+	text-decoration: underline;
+	color: #787878;
+}
+
+.menu-side--line {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #808080;
+}
+
+.quiz-btn {
+	background: red;
+	padding: 5px 10px;
+	border-radius: 10px;
+	color: white;
+	margin-top: 5px;
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.img-wrapper {
+	margin: 0 auto;
+
+}
+
+.stock-img {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 50px;
+}
+
+.versus {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 50px;
+	padding-top: 50px;
+	font-size: 25px;
+}
+
+.vs {
+	color: #4FA91B;
+}
+
+.bonds-img {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.content-img {
+	max-width: 100%;
+}
+
+.difference-wrapper {
+}
+
+.difference-table {
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.difference-table tr {
+	border-bottom: 1px solid #808080;
+}
+
+.difference-table tr:last-child {
+	border-bottom: none;
+}
+
+.difference-table td {
+	padding: 20px;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.diff {
+	text-transform: uppercase;
+	color: #4FA91B;
+	font-weight: bold;
+}
+
+.stocks-descript {
+	display: inline-block;
+	vertical-align: top;
+	margin-right:30px;
+	font-size:20px;
+	text-align: center;
+	padding-left: 35px;	
+}
+
+.asset-color {
+	color: #38812A;
+}
+
+.return {
+	line-height: 60px;
+}
+
+.return-guarantee {
+	line-height: 60px;
+}
+
+.descript {
+	display: inline-block;
+	vertical-align: top;
+	margin-right:20px;
+	font-size:18px;
+	text-align: center;
+	/*line-height: 55px;*/
+	color: #4F921B;
+	text-transform: uppercase;
+	font-size: bolder;
+}
+
+.diff-descript {
+	margin-bottom: 80px;
+}
+
+
+.bonds-descript {
+	display: inline-block;
+	vertical-align: top;
+	font-size:20px;
+	text-align: center;
+	/* padding-left: 35px; */
+}
+
+.clearfix {
+	float:right;
+}
+
+.btn-pages {
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #808080;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.btn-pages--first {
+	justify-content: flex-end;
+}
+
+.btn {
+	color:rgb(75, 70, 70);
+	font-size: 25px;
+	width: 150px;
+	border-radius: 10px;
+	box-shadow: 2px, 2px, 3px, 1px;
+	background: lightgray;
+	text-align: center;
+	padding: 10px 0;
+	text-decoration: none;
+}
+
+/* Socks vs Bonds style end */
+
+/* END-TUTORIAL style begin */
+
+.wrapper-pages--new {
+	display: flex;
+}
+
+.wrapper-tutorial {
+	margin: 0 auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.btn-pages--new {
+	border-top: none;
+	padding-left: 40px;
+}
+
+.end {
+	text-align: center;
+	font-size: 40px;
+	line-height: 1.8;
+	margin-top: 80px;
+}
+
+.end-bonds {
+	text-align: center;
+	font-size: 30px;
+	line-height: 1.8;
+	font-weight: normal;
+}
+
+.start-quiz {
+	text-align: center;
+	font-size: 30px;
+	line-height: 1.8;
+	font-weight: normal;
+}
+
+.q-btn {
+	text-align: center;
+}
+
+/* END-TUTORIAL style end */
+
+/* Stock Market page */
+
+.market-title {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 30px;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+
+.market-process {
+	display: flex;
+	justify-content: space-between;
+	max-width: 800px;
+	margin-bottom: 30px;
+}
+
+.market-process img {
+	max-width: 200px;
+	margin-right: 10px;
+}
+
+img.buy-stock-center {
+	max-width: 250px;
+}
+
+.arrow-stock {
+	max-width: 80px;
+}
+
+.content-wrapper-market {
+	max-width: 850px;
+}
+
+.market-text {
+	font-size: 25px;
+	line-height: 33px;
+}
+
+/* Stock Market page end */
+
+/* Buy stock page start */
+
+.buy-stock-title {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 40px;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+.buy-stock_content {
+	display: flex;
+	justify-content: center;
+}
+
+.buy-stock_content-block {
+	width: 50%;
+	margin: 0 10px;
+}
+
+.buy-stock_img-wrapper {
+	text-align: center;
+}
+
+.buy-stock_img {
+	max-width: 100%;
+	width: 100%;
+	max-height: 210px;
+}
+
+.buy-stock_list {
+	padding-left: 15px;
+}
+
+.buy-stock_list li {
+	margin-bottom: 10px;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+/* End Buy-stock page */
+
+/* Begin Benefits and Risks Stock page */
+
+.benefits-stock_wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.benefits-title {
+	font-size: 40px;
+}
+
+.benefits-stock_block {
+	width: 33%;
+	margin: 0 10px;
+}
+
+.benefits-stock_img-wrapper {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.benefits-stock_img {
+	max-width: 100%;
+	width: 100%;
+	height: 170px;
+}
+
+.benefits-stock_title {
+	text-align: center;
+	font-size: 20px;
+}
+
+.benefits-stock_title span {
+	color: #0E2C67;
+	font-weight: bold;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.benefits-stock_title img {
+	width: 25px;
+	margin-left: 5px;
+}
+
+.risks-stock_list {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.risks-stock_list li {
+	margin-bottom: 10px;
+}
+
+/* End Benefits and risks stocks */
+
+/* Begin End-Stock page */
+
+.end-stocks {
+	font-weight: normal;
+}
+
+.content-wrapper-stock4 {
+	margin-left: 40px;
+	width: auto;
+	vertical-align: middle;
+	margin-top: 80px;
+}
+
+/* End End-Stock page */
+
+/* Start Bonds page */
+
+.bonds_text {
+	font-size: 20px;
+	margin-bottom: 20px;
+	line-height: 28px;
+}
+
+.bonds_row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bonds_img {
+	max-width: 150px;
+}
+
+.bonds_block-title {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 25px;
+}
+
+.bonds_block-title span {
+	color: #0E2C67;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.bonds_block-title img {
+	width: 25px;
+	margin-left: 5px;
+}
+
+.bonds_list {
+	font-size: 20px;
+	padding-left: 20px;
+}
+
+.bonds_list li {
+	margin-bottom: 10px;
+}
+
+/* Begin Benefits and Risks Bonds */
+
+.bonds_benefits-list {
+	font-size: 20px;
+}
+
+.bonds_benefits-list li {
+	margin-bottom: 10px;
+}
+
+.bonds_risks-list {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.bonds_risks-list li {
+	margin-bottom: 10px;
+}
+
+/* End Benefits and Risks Bonds */
+
+/* Custom styles */
+
+.tippy-box[data-theme~='tomato'] {
+  background-color: #EDEDED;
+  color: #000;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #808080;
+}

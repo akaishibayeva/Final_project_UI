@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>End-tutorial</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="wrapper-pages wrapper-pages--new">
+
+        <div class="side-menu">
+            <ul class="nav-menu">
+                <li class="menu-side menu-side--line"><a href="/">Home</a></li>
+                <li class="menu-side"><a href="/stocks1">Stocks</a></li>
+                <li class="menu-side"><a href="/stocks2">Stock Market</a></li>
+                <li class="menu-side menu-side--line"><a href="/stocks3">Benefits and Risks</a></li>
+                <li class="menu-side"><a href="/bonds1">Bonds</a></li>
+                <li class="menu-side"><a href="/bonds2">Benefits and Risks</a></li>
+                <li class="menu-side menu-side--line"><a href="/bonds3">Stocks vs Bonds</a></li>
+                <li class="menu-side"><a href="/quiz" class="btn quiz-btn">Take a Quiz</a></li>
+            </ul>
+
+            <div class="btn-pages btn-pages--new">
+                <a href="/bonds3" class="btn end-tutorial-btn">Go Back</a>
+            </div>
+        </div>
+
+	<div class="wrapper-tutorial">
+
+            <h2 class="h end"> 
+                Congratulations! 
+            </h2>
+
+            <h2 class="h end-bonds">
+                You completed tutorial on Bonds
+            </h2>
+
+            <h2 class="h start-quiz">
+                Start the Quiz
+            </h2>
+
+            <div class="q-btn">
+                <a href="/quiz" class="quiz-button">
+                    Take Quiz
+                </a>
+            </div>
+
+	</div>
+
+    </div>
+
+
+	<script type="text/javascript" src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

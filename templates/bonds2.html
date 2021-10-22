@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Benefits and Risks Bonds</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+	<div class="wrapper-pages">
+
+        <div class="side-menu">
+            <ul class="nav-menu">
+                <li class="menu-side menu-side--line"><a href="/">Home</a></li>
+                <li class="menu-side"><a href="/stocks1">Stocks</a></li>
+                <li class="menu-side"><a href="/stocks2">Stock Market</a></li>
+                <li class="menu-side menu-side--line"><a href="/stocks3">Benefits and Risks</a></li>
+                <li class="menu-side"><a href="/bonds1">Bonds</a></li>
+                <li class="menu-side menu-side--active"><a href="/bonds2">Benefits and Risks</a></li>
+                <li class="menu-side menu-side--line"><a href="/bonds3">Stocks vs Bonds</a></li>
+                <li class="menu-side"><a href="/quiz" class="btn quiz-btn">Take a Quiz</a></li>
+            </ul>
+        </div>
+
+        <div class="content-wrapper content-wrapper-market">
+
+            <div class="bonds_wrapper">
+                
+                <div class="bonds_benefits">
+
+                    <h2 class="market-title benefits-title">
+                        <b>Benefits</b>
+                    </h2>
+                    
+                    <ul class="bonds_benefits-list">
+                        <li>Predictable income stream</li>
+                        <li>Have less volatility than stocks</li>
+                        <li>Pay higher interest rates than savings account</li>
+                        <li>Repayment of principal - you get all your money back at maturity</li>
+                    </ul>
+
+                </div>
+
+                <div class="bonds_risks">
+
+                     <h2 class="market-title benefits-title">
+                        <b>Risks</b>
+                    </h2>
+                    
+                    <ul class="bonds_risks-list">
+                        <li><b>Default risk</b> - the issuer can't pay the interest or principal in a timely manner or at all</li>
+                        <li><b>Inflation risk</b> -  the rate of price increases in the economy deteriorates the returns associated with the bond</li>
+                        <li><b>Liquidity risk</b> - investors may have difficulty finding a buyer when they want to sell and may be forced to sell at a significant discount to market value</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="btn-pages">
+            <a href="/bonds1" class="btn">Go Back</a>
+
+            <a href="/bonds3" class="btn">Next</a>
+        </div>
+
+
+	</div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
